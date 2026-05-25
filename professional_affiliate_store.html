@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Affiliate Mega Store</title>
+<style>
+body{font-family:Arial,sans-serif;margin:0;background:#f4f4f4}
+header{background:#131921;color:white;padding:15px;text-align:center}
+.banner{background:#febd69;padding:30px;text-align:center;font-size:24px;font-weight:bold}
+.controls{padding:15px;text-align:center}
+input,select{padding:10px;margin:5px;width:min(300px,90%)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:15px;padding:20px}
+.card{background:white;border-radius:10px;padding:10px;box-shadow:0 2px 5px rgba(0,0,0,.15)}
+.card img{width:100%;border-radius:8px}
+.btn{display:inline-block;background:#ff9900;color:#000;text-decoration:none;padding:8px 12px;border-radius:6px}
+</style>
+</head>
+<body>
+<header><h1>Affiliate Mega Store</h1></header>
+<div class="banner">Best Deals Across Hundreds of Products</div>
+<div class="controls">
+<input type="text" id="search" placeholder="Search products...">
+<select id="category">
+<option value="">All Categories</option>
+<option>Electronics</option>
+<option>Home</option>
+<option>Beauty</option>
+<option>Fitness</option>
+<option>Books</option>
+</select>
+</div>
+<div class="grid" id="products">
+    <div class="card" data-category="home">
+      <img src="https://via.placeholder.com/300x200?text=Product+1" alt="Product 1">
+      <h3>Product 1</h3>
+      <p>Home</p>
+      <a href="#" class="btn">Buy on Amazon</a>
+    </div>
+    
+    <div class="card" data-category="beauty">
+      <img src="https://via.placeholder.com/300x200?text=Product+2" alt="Product 2">
+      <h3>Product 2</h3>
+      <p>Beauty</p>
+      <a href="#" class="btn">Buy on Amazon</a>
+    </div>
+    
+    <div class="card" data-category="fitness">
+      <img src="https://via.placeholder.com/300x200?text=Product+3" alt="Product 3">
+      <h3>Product 3</h3>
+      <p>Fitness</p>
+      <a href="#" class="btn">Buy on Amazon</a>
+    </div>
+    
+    <div class="card" data-category="books">
+      <img src="https://via.placeholder.com/300x200?text=Product+4" alt="Product 4">
+      <h3>Product 4</h3>
+      <p>Books</p>
+      <a href="#" class="btn">Buy on Amazon</a>
+    </div>
+    
+    <div class="card" data-category="electronics">
+      <img src="https://via.placeholder.com/300x200?text=Product+5" alt="Product 5">
+      <h3>Product 5</h3>
+      <p>Electronics</p>
+      <a href="#" class="btn">Buy on Amazon</a>
+    </div>
+    
+    <div class="card" data-category="home">
+      <img src="https://via.placeholder.com/300x200?text=Product+6" alt="Product 6">
+      <h3>Product 6</h3>
+      <p>Home</p>
+      <a href="#" class="btn">Buy on Amazon</a>
+    </div>
+    
+    <div class="card" data-category="beauty">
+      <img src="https://via.placeholder.com/300x200?text=Product+7" alt="Product 7">
+      <h3>Product 7</h3>
+      <p>Beauty</p>
+      <a href="#" class="btn">Buy on Amazon</a>
+    </div>
+    
+    <div class="card" data-category="fitness">
+      <img src="https://via.placeholder.com/300x200?text=Product+8" alt="Product 8">
+      <h3>Product 8</h3>
+      <p>Fitness</p>
+      <a href="#" class="btn">Buy on Amazon</a>
+    </div>
+    
+    <div class="card" data-category="books">
+      <img src="https://via.placeholder.com/300x200?text=Product+9" alt="Product 9">
+      <h3>Product 9</h3>
+      <p>Books</p>
+      <a href="#" class="btn">Buy on Amazon</a>
+    </div>
+    
+    <div class="card" data-category="electronics">
+      <img src="https://via.placeholder.com/300x200?text=Product+10" alt="Product 10">
+      <h3>Product 10</h3>
+      <p>Electronics</p>
+      <a href="#" class="btn">Buy on Amazon</a>
+    </div>
+    
+    <div class="card" data-category="home">
+      <img src="https://via.placeholder.com/300x200?text=Product+11" alt="Product 11">
+      <h3>Product 11</h3>
+      <p>Home</p>
+      <a href="#" class="btn">Buy on Amazon</a>
+    </div>
+    
+    <div class="card" data-category="beauty">
+      <img src="https://via.placeholder.com/300x200?text=Product+12" alt="Product 12">
+      <h3>Product 12</h3>
+      <p>Beauty</p>
+      <a href="#" class="btn">Buy on Amazon</a>
+    </div>
+    
+    <div class="card" data-category="fitness">
+      <img src="https://via.placeholder.com/300x200?text=Product+13" alt="Product 13">
+      <h3>Product 13</h3>
+      <p>Fitness</p>
+      <a href="#" class="btn">Buy on Amazon</a>
+    </div>
+    
+    <div class="card" data-category="books">
+      <img src="https://via.placeholder.com/300x200?text=Product+14" alt="Product 14">
+      <h3>Product 14</h3>
+      <p>Books</p>
+      <a href="#" class="btn">Buy on Amazon</a>
+    </div>
+    
+    <div class="card" data-category="electronics">
+      <img src="https://via.placeholder.com/300x200?text=Product+15" alt="Product 15">
+      <h3>Product 15</h3>
+      <p>Electronics</p>
+      <a href="#" class="btn">Buy on Amazon</a>
+    </div>
+    
+    <div class="card" data-category="home">
+      <img src="https://via.placeholder.com/300x200?text=Product+16" alt="Product 16">
+      <h3>Product 16</h3>
+      <p>Home</p>
+      <a href="#" class="btn">Buy on Amazon</a>
+    </div>
+    
+    <div class="card" data-category="beauty">
+      <img src="https://via.placeholder.com/300x200?text=Product+17" alt="Product 17">
+      <h3>Product 17</h3>
+      <p>Beauty</p>
+      <a href="#" class="btn">Buy on Amazon</a>
+    </div>
+    
+    <div class="card" data-category="fitness">
+      <img src="https://via.placeholder.com/300x200?text=Product+18" alt="Product 18">
+      <h3>Product 18</h3>
+      <p>Fitness</p>
+      <a href="#" class="btn">Buy on Amazon</a>
+    </div>
+    
+    <div class="card" data-category="books">
+      <img src="https://via.placeholder.com/300x200?text=Product+19" alt="Product 19">
+      <h3>Product 19</h3>
+      <p>Books</p>
+      <a href="#" class="btn">Buy on Amazon</a>
+    </div>
+    
+    <div class="card" data-category="electronics">
+      <img src="https://via.placeholder.com/300x200?text=Product+20" alt="Product 20">
+      <h3>Product 20</h3>
+      <p>Electronics</p>
+      <a href="#" class="btn">Buy on Amazon</a>
+    </div>
+    
+    <div class="card" data-category="home">
+      <img src="https://via.placeholder.com/300x200?text=Product+21" alt="Product 21">
+      <h3>Product 21</h3>
+      <p>Home</p>
+      <a href="#" class="btn">Buy on Amazon</a>
+    </div>
+    
+    <div class="card" data-category="beauty">
+      <img src="https://via.placeholder.com/300x200?text=Product+22" alt="Product 22">
+      <h3>Product 22</h3>
+      <p>Beauty</p>
+      <a href="#" class="btn">Buy on Amazon</a>
+    </div>
+    
+    <div class="card" data-category="fitness">
+      <img src="https://via.placeholder.com/300x200?text=Product+23" alt="Product 23">
+      <h3>Product 23</h3>
+      <p>Fitness</p>
+      <a href="#" class="btn">Buy on Amazon</a>
+    </div>
+    
+    <div class="card" data-category="books">
+      <img src="https://via.placeholder.com/300x200?text=Product+24" alt="Product 24">
+      <h3>Product 24</h3>
+      <p>Books</p>
+      <a href="#" class="btn">Buy on Amazon</a>
+    </div>
+    
+    <div class="card" data-category="electronics">
+      <img src="https://via.placeholder.com/300x200?text=Product+25" alt="Product 25">
+      <h3>Product 25</h3>
+      <p>Electronics</p>
+      <a href="#" class="btn">Buy on Amazon</a>
+    </div>
+    
+    <div class="card" data-category="home">
+      <img src="https://via.placeholder.com/300x200?text=Product+26" alt="Product 26">
+      <h3>Product 26</h3>
+      <p>Home</p>
+      <a href="#" class="btn">Buy on Amazon</a>
+    </div>
+    
+    <div class="card" data-category="beauty">
+      <img src="https://via.placeholder.com/300x200?text=Product+27" alt="Product 27">
+      <h3>Product 27</h3>
+      <p>Beauty</p>
+      <a href="#" class="btn">Buy on Amazon</a>
+    </div>
+    
+    <div class="card" data-category="fitness">
+      <img src="https://via.placeholder.com/300x200?text=Product+28" alt="Product 28">
+      <h3>Product 28</h3>
+      <p>Fitness</p>
+      <a href="#" class="btn">Buy on Amazon</a>
+    </div>
+    
+    <div class="card" data-category="books">
+      <img src="https://via.placeholder.com/300x200?text=Product+29" alt="Product 29">
+      <h3>Product 29</h3>
+      <p>Books</p>
+      <a href="#" class="btn">Buy on Amazon</a>
+    </div>
+    
+    <div class="card" data-category="electronics">
+      <img src="https://via.placeholder.com/300x200?text=Product+30" alt="Product 30">
+      <h3>Product 30</h3>
+      <p>Electronics</p>
+      <a href="#" class="btn">Buy on Amazon</a>
+    </div>
+    
+    <div class="card" data-category="home">
+      <img src="https://via.placeholder.com/300x200?text=Product+31" alt="Product 31">
+      <h3>Product 31</h3>
+      <p>Home</p>
+      <a href="#" class="btn">Buy on Amazon</a>
+    </div>
+    
+    <div class="card" data-category="beauty">
+      <img src="https://via.placeholder.com/300x200?text=Product+32" alt="Product 32">
+      <h3>Product 32</h3>
+      <p>Beauty</p>
+      <a href="#" class="btn">Buy on Amazon</a>
+    </div>
+    
+    <div class="card" data-category="fitness">
+      <img src="https://via.placeholder.com/300x200?text=Product+33" alt="Product 33">
+      <h3>Product 33</h3>
+      <p>Fitness</p>
+      <a href="#" class="btn">Buy on Amazon</a>
+    </div>
+    
+    <div class="card" data-category="books">
+      <img src="https://via.placeholder.com/300x200?text=Product+34" alt="Product 34">
+      <h3>Product 34</h3>
+      <p>Books</p>
+      <a href="#" class="btn">Buy on Amazon</a>
+    </div>
+    
+    <div class="card" data-category="electronics">
+      <img src="https://via.placeholder.com/300x200?text=Product+35" alt="Product 35">
+      <h3>Product 35</h3>
+      <p>Electronics</p>
+      <a href="#" class="btn">Buy on Amazon</a>
+    </div>
+    
+    <div class="card" data-category="home">
+      <img src="https://via.placeholder.com/300x200?text=Product+36" alt="Product 36">
+      <h3>Product 36</h3>
+      <p>Home</p>
+      <a href="#" class="btn">Buy on Amazon</a>
+    </div>
+    
+    <div class="card" data-category="beauty">
+      <img src="https://via.placeholder.com/300x200?text=Product+37" alt="Product 37">
+      <h3>Product 37</h3>
+      <p>Beauty</p>
+      <a href="#" class="btn">Buy on Amazon</a>
+    </div>
+    
+    <div class="card" data-category="fitness">
+      <img src="https://via.placeholder.com/300x200?text=Product+38" alt="Product 38">
+      <h3>Product 38</h3>
+      <p>Fitness</p>
+      <a href="#" class="btn">Buy on Amazon</a>
+    </div>
+    
+    <div class="card" data-category="books">
+      <img src="https://via.placeholder.com/300x200?text=Product+39" alt="Product 39">
+      <h3>Product 39</h3>
+      <p>Books</p>
+      <a href="#" class="btn">Buy on Amazon</a>
+    </div>
+    
+    <div class="card" data-category="electronics">
+      <img src="https://via.placeholder.com/300x200?text=Product+40" alt="Product 40">
+      <h3>Product 40</h3>
+      <p>Electronics</p>
+      <a href="#" class="btn">Buy on Amazon</a>
+    </div>
+    
+    <div class="card" data-category="home">
+      <img src="https://via.placeholder.com/300x200?text=Product+41" alt="Product 41">
+      <h3>Product 41</h3>
+      <p>Home</p>
+      <a href="#" class="btn">Buy on Amazon</a>
+    </div>
+    
+    <div class="card" data-category="beauty">
+      <img src="https://via.placeholder.com/300x200?text=Product+42" alt="Product 42">
+      <h3>Product 42</h3>
+      <p>Beauty</p>
+      <a href="#" class="btn">Buy on Amazon</a>
+    </div>
+    
+    <div class="card" data-category="fitness">
+      <img src="https://via.placeholder.com/300x200?text=Product+43" alt="Product 43">
+      <h3>Product 43</h3>
+      <p>Fitness</p>
+      <a href="#" class="btn">Buy on Amazon</a>
+    </div>
+    
+    <div class="card" data-category="books">
+      <img src="https://via.placeholder.com/300x200?text=Product+44" alt="Product 44">
+      <h3>Product 44</h3>
+      <p>Books</p>
+      <a href="#" class="btn">Buy on Amazon</a>
+    </div>
+    
+    <div class="card" data-category="electronics">
+      <img src="https://via.placeholder.com/300x200?text=Product+45" alt="Product 45">
+      <h3>Product 45</h3>
+      <p>Electronics</p>
+      <a href="#" class="btn">Buy on Amazon</a>
+    </div>
+    
+    <div class="card" data-category="home">
+      <img src="https://via.placeholder.com/300x200?text=Product+46" alt="Product 46">
+      <h3>Product 46</h3>
+      <p>Home</p>
+      <a href="#" class="btn">Buy on Amazon</a>
+    </div>
+    
+    <div class="card" data-category="beauty">
+      <img src="https://via.placeholder.com/300x200?text=Product+47" alt="Product 47">
+      <h3>Product 47</h3>
+      <p>Beauty</p>
+      <a href="#" class="btn">Buy on Amazon</a>
+    </div>
+    
+    <div class="card" data-category="fitness">
+      <img src="https://via.placeholder.com/300x200?text=Product+48" alt="Product 48">
+      <h3>Product 48</h3>
+      <p>Fitness</p>
+      <a href="#" class="btn">Buy on Amazon</a>
+    </div>
+    
+    <div class="card" data-category="books">
+      <img src="https://via.placeholder.com/300x200?text=Product+49" alt="Product 49">
+      <h3>Product 49</h3>
+      <p>Books</p>
+      <a href="#" class="btn">Buy on Amazon</a>
+    </div>
+    
+    <div class="card" data-category="electronics">
+      <img src="https://via.placeholder.com/300x200?text=Product+50" alt="Product 50">
+      <h3>Product 50</h3>
+      <p>Electronics</p>
+      <a href="#" class="btn">Buy on Amazon</a>
+    </div>
+    
+    <div class="card" data-category="home">
+      <img src="https://via.placeholder.com/300x200?text=Product+51" alt="Product 51">
+      <h3>Product 51</h3>
+      <p>Home</p>
+      <a href="#" class="btn">Buy on Amazon</a>
+    </div>
+    
+    <div class="card" data-category="beauty">
+      <img src="https://via.placeholder.com/300x200?text=Product+52" alt="Product 52">
+      <h3>Product 52</h3>
+      <p>Beauty</p>
+      <a href="#" class="btn">Buy on Amazon</a>
+    </div>
+    
+    <div class="card" data-category="fitness">
+      <img src="https://via.placeholder.com/300x200?text=Product+53" alt="Product 53">
+      <h3>Product 53</h3>
+      <p>Fitness</p>
+      <a href="#" class="btn">Buy on Amazon</a>
+    </div>
+    
+    <div class="card" data-category="books">
+      <img src="https://via.placeholder.com/300x200?text=Product+54" alt="Product 54">
+      <h3>Product 54</h3>
+      <p>Books</p>
+      <a href="#" class="btn">Buy on Amazon</a>
+    </div>
+    
+    <div class="card" data-category="electronics">
+      <img src="https://via.placeholder.com/300x200?text=Product+55" alt="Product 55">
+      <h3>Product 55</h3>
+      <p>Electronics</p>
+      <a href="#" class="btn">Buy on Amazon</a>
+    </div>
+    
+    <div class="card" data-category="home">
+      <img src="https://via.placeholder.com/300x200?text=Product+56" alt="Product 56">
+      <h3>Product 56</h3>
+      <p>Home</p>
+      <a href="#" class="btn">Buy on Amazon</a>
+    </div>
+    
+    <div class="card" data-category="beauty">
+      <img src="https://via.placeholder.com/300x200?text=Product+57" alt="Product 57">
+      <h3>Product 57</h3>
+      <p>Beauty</p>
+      <a href="#" class="btn">Buy on Amazon</a>
+    </div>
+    
+    <div class="card" data-category="fitness">
+      <img src="https://via.placeholder.com/300x200?text=Product+58" alt="Product 58">
+      <h3>Product 58</h3>
+      <p>Fitness</p>
+      <a href="#" class="btn">Buy on Amazon</a>
+    </div>
+    
+    <div class="card" data-category="books">
+      <img src="https://via.placeholder.com/300x200?text=Product+59" alt="Product 59">
+      <h3>Product 59</h3>
+      <p>Books</p>
+      <a href="#" class="btn">Buy on Amazon</a>
+    </div>
+    
+    <div class="card" data-category="electronics">
+      <img src="https://via.placeholder.com/300x200?text=Product+60" alt="Product 60">
+      <h3>Product 60</h3>
+      <p>Electronics</p>
+      <a href="#" class="btn">Buy on Amazon</a>
+    </div>
+    
+    <div class="card" data-category="home">
+      <img src="https://via.placeholder.com/300x200?text=Product+61" alt="Product 61">
+      <h3>Product 61</h3>
+      <p>Home</p>
+      <a href="#" class="btn">Buy on Amazon</a>
+    </div>
+    
+    <div class="card" data-category="beauty">
+      <img src="https://via.placeholder.com/300x200?text=Product+62" alt="Product 62">
+      <h3>Product 62</h3>
+      <p>Beauty</p>
+      <a href="#" class="btn">Buy on Amazon</a>
+    </div>
+    
+    <div class="card" data-category="fitness">
+      <img src="https://via.placeholder.com/300x200?text=Product+63" alt="Product 63">
+      <h3>Product 63</h3>
+      <p>Fitness</p>
+      <a href="#" class="btn">Buy on Amazon</a>
+    </div>
+    
+    <div class="card" data-category="books">
+      <img src="https://via.placeholder.com/300x200?text=Product+64" alt="Product 64">
+      <h3>Product 64</h3>
+      <p>Books</p>
+      <a href="#" class="btn">Buy on Amazon</a>
+    </div>
+    
+    <div class="card" data-category="electronics">
+      <img src="https://via.placeholder.com/300x200?text=Product+65" alt="Product 65">
+      <h3>Product 65</h3>
+      <p>Electronics</p>
+      <a href="#" class="btn">Buy on Amazon</a>
+    </div>
+    
+    <div class="card" data-category="home">
+      <img src="https://via.placeholder.com/300x200?text=Product+66" alt="Product 66">
+      <h3>Product 66</h3>
+      <p>Home</p>
+      <a href="#" class="btn">Buy on Amazon</a>
+    </div>
+    
+    <div class="card" data-category="beauty">
+      <img src="https://via.placeholder.com/300x200?text=Product+67" alt="Product 67">
+      <h3>Product 67</h3>
+      <p>Beauty</p>
+      <a href="#" class="btn">Buy on Amazon</a>
+    </div>
+    
+    <div class="card" data-category="fitness">
+      <img src="https://via.placeholder.com/300x200?text=Product+68" alt="Product 68">
+      <h3>Product 68</h3>
+      <p>Fitness</p>
+      <a href="#" class="btn">Buy on Amazon</a>
+    </div>
+    
+    <div class="card" data-category="books">
+      <img src="https://via.placeholder.com/300x200?text=Product+69" alt="Product 69">
+      <h3>Product 69</h3>
+      <p>Books</p>
+      <a href="#" class="btn">Buy on Amazon</a>
+    </div>
+    
+    <div class="card" data-category="electronics">
+      <img src="https://via.placeholder.com/300x200?text=Product+70" alt="Product 70">
+      <h3>Product 70</h3>
+      <p>Electronics</p>
+      <a href="#" class="btn">Buy on Amazon</a>
+    </div>
+    
+    <div class="card" data-category="home">
+      <img src="https://via.placeholder.com/300x200?text=Product+71" alt="Product 71">
+      <h3>Product 71</h3>
+      <p>Home</p>
+      <a href="#" class="btn">Buy on Amazon</a>
+    </div>
+    
+    <div class="card" data-category="beauty">
+      <img src="https://via.placeholder.com/300x200?text=Product+72" alt="Product 72">
+      <h3>Product 72</h3>
+      <p>Beauty</p>
+      <a href="#" class="btn">Buy on Amazon</a>
+    </div>
+    
+    <div class="card" data-category="fitness">
+      <img src="https://via.placeholder.com/300x200?text=Product+73" alt="Product 73">
+      <h3>Product 73</h3>
+      <p>Fitness</p>
+      <a href="#" class="btn">Buy on Amazon</a>
+    </div>
+    
+    <div class="card" data-category="books">
+      <img src="https://via.placeholder.com/300x200?text=Product+74" alt="Product 74">
+      <h3>Product 74</h3>
+      <p>Books</p>
+      <a href="#" class="btn">Buy on Amazon</a>
+    </div>
+    
+    <div class="card" data-category="electronics">
+      <img src="https://via.placeholder.com/300x200?text=Product+75" alt="Product 75">
+      <h3>Product 75</h3>
+      <p>Electronics</p>
+      <a href="#" class="btn">Buy on Amazon</a>
+    </div>
+    
+    <div class="card" data-category="home">
+      <img src="https://via.placeholder.com/300x200?text=Product+76" alt="Product 76">
+      <h3>Product 76</h3>
+      <p>Home</p>
+      <a href="#" class="btn">Buy on Amazon</a>
+    </div>
+    
+    <div class="card" data-category="beauty">
+      <img src="https://via.placeholder.com/300x200?text=Product+77" alt="Product 77">
+      <h3>Product 77</h3>
+      <p>Beauty</p>
+      <a href="#" class="btn">Buy on Amazon</a>
+    </div>
+    
+    <div class="card" data-category="fitness">
+      <img src="https://via.placeholder.com/300x200?text=Product+78" alt="Product 78">
+      <h3>Product 78</h3>
+      <p>Fitness</p>
+      <a href="#" class="btn">Buy on Amazon</a>
+    </div>
+    
+    <div class="card" data-category="books">
+      <img src="https://via.placeholder.com/300x200?text=Product+79" alt="Product 79">
+      <h3>Product 79</h3>
+      <p>Books</p>
+      <a href="#" class="btn">Buy on Amazon</a>
+    </div>
+    
+    <div class="card" data-category="electronics">
+      <img src="https://via.placeholder.com/300x200?text=Product+80" alt="Product 80">
+      <h3>Product 80</h3>
+      <p>Electronics</p>
+      <a href="#" class="btn">Buy on Amazon</a>
+    </div>
+    
+    <div class="card" data-category="home">
+      <img src="https://via.placeholder.com/300x200?text=Product+81" alt="Product 81">
+      <h3>Product 81</h3>
+      <p>Home</p>
+      <a href="#" class="btn">Buy on Amazon</a>
+    </div>
+    
+    <div class="card" data-category="beauty">
+      <img src="https://via.placeholder.com/300x200?text=Product+82" alt="Product 82">
+      <h3>Product 82</h3>
+      <p>Beauty</p>
+      <a href="#" class="btn">Buy on Amazon</a>
+    </div>
+    
+    <div class="card" data-category="fitness">
+      <img src="https://via.placeholder.com/300x200?text=Product+83" alt="Product 83">
+      <h3>Product 83</h3>
+      <p>Fitness</p>
+      <a href="#" class="btn">Buy on Amazon</a>
+    </div>
+    
+    <div class="card" data-category="books">
+      <img src="https://via.placeholder.com/300x200?text=Product+84" alt="Product 84">
+      <h3>Product 84</h3>
+      <p>Books</p>
+      <a href="#" class="btn">Buy on Amazon</a>
+    </div>
+    
+    <div class="card" data-category="electronics">
+      <img src="https://via.placeholder.com/300x200?text=Product+85" alt="Product 85">
+      <h3>Product 85</h3>
+      <p>Electronics</p>
+      <a href="#" class="btn">Buy on Amazon</a>
+    </div>
+    
+    <div class="card" data-category="home">
+      <img src="https://via.placeholder.com/300x200?text=Product+86" alt="Product 86">
+      <h3>Product 86</h3>
+      <p>Home</p>
+      <a href="#" class="btn">Buy on Amazon</a>
+    </div>
+    
+    <div class="card" data-category="beauty">
+      <img src="https://via.placeholder.com/300x200?text=Product+87" alt="Product 87">
+      <h3>Product 87</h3>
+      <p>Beauty</p>
+      <a href="#" class="btn">Buy on Amazon</a>
+    </div>
+    
+    <div class="card" data-category="fitness">
+      <img src="https://via.placeholder.com/300x200?text=Product+88" alt="Product 88">
+      <h3>Product 88</h3>
+      <p>Fitness</p>
+      <a href="#" class="btn">Buy on Amazon</a>
+    </div>
+    
+    <div class="card" data-category="books">
+      <img src="https://via.placeholder.com/300x200?text=Product+89" alt="Product 89">
+      <h3>Product 89</h3>
+      <p>Books</p>
+      <a href="#" class="btn">Buy on Amazon</a>
+    </div>
+    
+    <div class="card" data-category="electronics">
+      <img src="https://via.placeholder.com/300x200?text=Product+90" alt="Product 90">
+      <h3>Product 90</h3>
+      <p>Electronics</p>
+      <a href="#" class="btn">Buy on Amazon</a>
+    </div>
+    
+    <div class="card" data-category="home">
+      <img src="https://via.placeholder.com/300x200?text=Product+91" alt="Product 91">
+      <h3>Product 91</h3>
+      <p>Home</p>
+      <a href="#" class="btn">Buy on Amazon</a>
+    </div>
+    
+    <div class="card" data-category="beauty">
+      <img src="https://via.placeholder.com/300x200?text=Product+92" alt="Product 92">
+      <h3>Product 92</h3>
+      <p>Beauty</p>
+      <a href="#" class="btn">Buy on Amazon</a>
+    </div>
+    
+    <div class="card" data-category="fitness">
+      <img src="https://via.placeholder.com/300x200?text=Product+93" alt="Product 93">
+      <h3>Product 93</h3>
+      <p>Fitness</p>
+      <a href="#" class="btn">Buy on Amazon</a>
+    </div>
+    
+    <div class="card" data-category="books">
+      <img src="https://via.placeholder.com/300x200?text=Product+94" alt="Product 94">
+      <h3>Product 94</h3>
+      <p>Books</p>
+      <a href="#" class="btn">Buy on Amazon</a>
+    </div>
+    
+    <div class="card" data-category="electronics">
+      <img src="https://via.placeholder.com/300x200?text=Product+95" alt="Product 95">
+      <h3>Product 95</h3>
+      <p>Electronics</p>
+      <a href="#" class="btn">Buy on Amazon</a>
+    </div>
+    
+    <div class="card" data-category="home">
+      <img src="https://via.placeholder.com/300x200?text=Product+96" alt="Product 96">
+      <h3>Product 96</h3>
+      <p>Home</p>
+      <a href="#" class="btn">Buy on Amazon</a>
+    </div>
+    
+    <div class="card" data-category="beauty">
+      <img src="https://via.placeholder.com/300x200?text=Product+97" alt="Product 97">
+      <h3>Product 97</h3>
+      <p>Beauty</p>
+      <a href="#" class="btn">Buy on Amazon</a>
+    </div>
+    
+    <div class="card" data-category="fitness">
+      <img src="https://via.placeholder.com/300x200?text=Product+98" alt="Product 98">
+      <h3>Product 98</h3>
+      <p>Fitness</p>
+      <a href="#" class="btn">Buy on Amazon</a>
+    </div>
+    
+    <div class="card" data-category="books">
+      <img src="https://via.placeholder.com/300x200?text=Product+99" alt="Product 99">
+      <h3>Product 99</h3>
+      <p>Books</p>
+      <a href="#" class="btn">Buy on Amazon</a>
+    </div>
+    
+    <div class="card" data-category="electronics">
+      <img src="https://via.placeholder.com/300x200?text=Product+100" alt="Product 100">
+      <h3>Product 100</h3>
+      <p>Electronics</p>
+      <a href="#" class="btn">Buy on Amazon</a>
+    </div>
+    </div>
+<script>
+function filterProducts(){
+ const term=document.getElementById('search').value.toLowerCase();
+ const cat=document.getElementById('category').value.toLowerCase();
+ document.querySelectorAll('.card').forEach(card=>{
+   const text=card.innerText.toLowerCase();
+   const c=card.dataset.category;
+   card.style.display=((!term||text.includes(term))&&(!cat||c===cat))?'block':'none';
+ });
+}
+document.getElementById('search').oninput=filterProducts;
+document.getElementById('category').onchange=filterProducts;
+</script>
+</body>
+</html>
